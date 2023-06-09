@@ -88,7 +88,7 @@ func TestDNSDemo1(t *testing.T) {
 	}
 	conn, err := net.DialUDP(dnsProtocol, nil, udpAddr)
 
-	question := dnsQuestion{"list.eber.vip", dnsType, dnsClass}
+	question := dnsQuestion{"dns.eber.vip", dnsType, dnsClass}
 	out := DNSData{}
 	out.TransactionId = 2015
 	out.SetFlag(0, 0, 0, 0, 1, 0, 0)
